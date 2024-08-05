@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="email">
+        <input type="email" id="eemail" placeholder="enter your email">
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="pas">
+        <input type="password" id="ppass" placeholder="enter password">
+    </div>
+    <button id="sbbtn" onclick="data()">Submit</button>
+    <script>
+        function data() {
+            const emailData = document.getElementById('eemail');
+            const passData = document.getElementById('ppass');
+            const buttonClick = document.getElementById('sbbtn');
+
+            const data_one = emailData.value;
+            const data_two = passData.value;
+
+            alert(data_one);
+        }
+    </script>
+</body>
+
+</html>
